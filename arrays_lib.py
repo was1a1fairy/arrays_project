@@ -40,3 +40,7 @@ def prod_2d(matrix):
         for j in range(len(matrix)):
             prod*=matrix[i][j]
     return prod
+
+def mean_2d(matrix):
+    return mean_2d(matrix)/len(matrix)
+
