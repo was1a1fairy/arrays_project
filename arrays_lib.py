@@ -20,3 +20,16 @@ def max_elem(arr):
         if arr[i] > max:
             max = arr[i]
     return max
+
+def prod_1d(arr):
+    prod=1
+    for i in range(len(arr)):
+        prod*=arr[i]
+    return prod
+
+def sum_2d(matrix):
+    summ=0
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            summ+=matrix[i][j]
+    return summ
