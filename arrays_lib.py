@@ -51,3 +51,11 @@ def max_2d(matrix):
             if max<matrix[i][j]:
                 max=matrix[i][j]
     return max
+
+def min_2d(matrix):
+    min = matrix[0][0]
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            if min>matrix[i][j]:
+                min=matrix[i][j]
+    return min
