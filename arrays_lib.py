@@ -44,3 +44,10 @@ def prod_2d(matrix):
 def mean_2d(matrix):
     return mean_2d(matrix)/len(matrix)
 
+def max_2d(matrix):
+    max=matrix[0][0]
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            if max<matrix[i][j]:
+                max=matrix[i][j]
+    return max
