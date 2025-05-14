@@ -33,3 +33,10 @@ def sum_2d(matrix):
         for j in range(len(matrix)):
             summ+=matrix[i][j]
     return summ
+
+def prod_2d(matrix):
+    prod=1
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            prod*=matrix[i][j]
+    return prod
