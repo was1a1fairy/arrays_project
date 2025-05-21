@@ -59,3 +59,10 @@ def min_2d(matrix):
             if min>matrix[i][j]:
                 min=matrix[i][j]
     return min
+
+def prod_arrays(arr1,arr2):
+    res = []
+    for i in range(len(arr1)):
+        res.append(arr1[i]*arr2[i])
+    return res
+
