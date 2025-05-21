@@ -1,4 +1,4 @@
-def summ_1d(arr -> list) -> int:
+def summ_1d(arr):
     summ=0
     for i in range(len(arr)):
         summ+=arr[i]
