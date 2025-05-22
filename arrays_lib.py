@@ -60,6 +60,34 @@ def min_2d(matrix):
                 min=matrix[i][j]
     return min
 
+def sum_arrays(arr1, arr2):
+    res = []
+    for i in range(len(arr1)):
+        res.append(arr1[i]+arr2[i])
+    return res
+
+def compare_arrays(arr1,arr2):
+    res = []
+    def arr1_compare(arr1,arr2):
+        for i in range(len(arr1)):
+            if arr1[i]>arr2[i]:
+                res.append(True)
+            else:
+                res.append(False)
+    def arr2_compare(arr1,arr2):
+        for i in range(len(arr1)):
+            if arr2[i]>arr1[i]:
+                res.append(True)
+            else:
+                res.append(False)
+    def equation_compare(arr1,arr2):
+        for i in range(len(arr1)):
+            if arr1[i]==arr2[i]:
+                res.append(True)
+            else:
+                res.append(False)
+    return arr1_compare(arr1, arr2), arr2_compare(arr1, arr2), equation_compare(arr1,arr2)
+
 def diff_arrays(arr1, arr2):
     res = []
     for i in range(len(arr1)):
