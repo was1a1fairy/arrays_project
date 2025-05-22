@@ -60,6 +60,12 @@ def min_2d(matrix):
                 min=matrix[i][j]
     return min
 
+def diff_arrays(arr1, arr2):
+    res = []
+    for i in range(len(arr1)):
+        res.append(arr1[i]-arr2[i])
+    return res
+
 def prod_arrays(arr1,arr2):
     res = []
     for i in range(len(arr1)):
