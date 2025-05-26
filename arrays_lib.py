@@ -185,3 +185,13 @@ def filter_less(arr: list, value):
             min_value.append(arr[i])
 
     return min_value
+
+def filter_not_equal(arr: list, value):
+    not_equal_value = []
+
+    for i in range(len(arr)):
+
+        if arr[i] == value:
+            not_equal_value.append(arr[i])
+
+    return not_equal_value
