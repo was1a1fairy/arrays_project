@@ -202,3 +202,10 @@ def filter_greater(arr: list, value: int):
         if value<arr[i]:
             res.append(arr[i])
     return res
+
+def filter_equal(arr: list, value: int):
+    res = []
+    for i in range(len(arr)):
+        if value==arr[i]:
+            res.append(arr[i])
+    return res
