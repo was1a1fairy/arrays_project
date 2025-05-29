@@ -102,7 +102,7 @@ def main():
     line, col = input_count_matrix()
     matrix = input_matrix(line, col)
 
-    sum = sum_1d(arr)
+    sum = summ_1d(arr)
     log_action('function call sum')
     log_action(str(sum))
 
@@ -118,7 +118,7 @@ def main():
     log_action('function call max')
     log_action(str(max_1))
 
-    min_1 = min_1d(arr)
+    min_1 = min_elem(arr)
     log_action('function call min')
     log_action(str(min_1))
 
