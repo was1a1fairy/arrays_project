@@ -195,3 +195,17 @@ def filter_not_equal(arr: list, value):
             not_equal_value.append(arr[i])
 
     return not_equal_value
+
+def filter_greater(arr: list, value: int):
+    res = []
+    for i in range(len(arr)):
+        if value<arr[i]:
+            res.append(arr[i])
+    return res
+
+def filter_equal(arr: list, value: int):
+    res = []
+    for i in range(len(arr)):
+        if value==arr[i]:
+            res.append(arr[i])
+    return res

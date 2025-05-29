@@ -1,4 +1,5 @@
 # arrays_lib
+<<<<<<< HEAD
 1. функция для поиска суммы элементов одномерного массива **sum_1d(arr: list) -> int or floaf**
 - input data: list: [1, 2, 3]
 - output data: int: 6
@@ -69,6 +70,7 @@
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[1, 0], [4, 0]]
 
-16. функция для обхода правого треугольника матрицы  **right_triangle(matrix: list[list]) -> int or floaf**
+17. функция для обхода правого треугольника матрицы  **right_triangle(matrix: list[list]) -> int or floaf**
+
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[0, 2], [0, 5]]
