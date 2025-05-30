@@ -30,7 +30,7 @@ def prod_1d(arr):
 def sum_2d(matrix):
     summ=0
     for i in range(len(matrix)):
-        for j in range(len(matrix)):
+        for j in range(len(matrix[i])):
             summ+=matrix[i][j]
     return summ
 
@@ -42,7 +42,11 @@ def prod_2d(matrix):
     return prod
 
 def mean_2d(matrix):
-    return mean_2d(matrix)/len(matrix)
+    count = 0
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            count += matrix[i][j]
+    return (sum_2d(matrix))/count
 
 def max_2d(matrix):
     max=matrix[0][0]
@@ -191,7 +195,7 @@ def filter_not_equal(arr: list, value):
 
     for i in range(len(arr)):
 
-        if arr[i] == value:
+        if arr[i] != value:
             not_equal_value.append(arr[i])
 
     return not_equal_value
