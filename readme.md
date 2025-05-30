@@ -1,6 +1,6 @@
 # arrays_lib
 <<<<<<< HEAD
-1. функция для поиска суммы элементов одномерного массива **sum_1d(arr: list) -> int or floaf**
+1. функция для поиска суммы элементов одномерного массива **sum_1d(arr: list) -> int or float**
 - input data: list: [1, 2, 3]
 - output data: int: 6
 
@@ -22,23 +22,23 @@
 
 ### матрицы
 
-6. функция для поиска суммы элементов двумерного массива **sum_2d(matrix: list[list]) -> int or floaf**
+6. функция для поиска суммы элементов двумерного массива **sum_2d(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2, 3],[4, 5, 6]]
 - output data: int: 21
 
-7. функция для поиска произведения элементов двумерного массива **prod_2d(matrix: list[list]) -> int or floaf**
+7. функция для поиска произведения элементов двумерного массива **prod_2d(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2, 3],[4, 5, 6]]
 - output data: int: 720
 
-8. функция для поиска среднего арифметического элементов двумерного массива **mean_2d(matrix: list[list]) -> int or floaf**
+8. функция для поиска среднего арифметического элементов двумерного массива **mean_2d(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2, 3],[4, 5, 6]]
 - output data: int: 3.5
 
-9. функция для поиска максимального элемента двумерного массива **max_2d(matrix: list[list]) -> int or floaf**
+9. функция для поиска максимального элемента двумерного массива **max_2d(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2, 3],[4, 5, 6]]
 - output data: int: 6
 
-10. функция для поиска минимального элемента двумерного массива **min_2d(matrix: list[list]) -> int or floaf**
+10. функция для поиска минимального элемента двумерного массива **min_2d(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2, 3],[4, 5, 6]]
 - output data: int: 1
 
@@ -58,19 +58,38 @@
 
 ### обходы треугольников
 
-14. функция для обхода нижнего треугольника матрицы  **lower_triangle(matrix: list[list]) -> int or floaf**
+14. функция для обхода нижнего треугольника матрицы  **lower_triangle(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[1, 0], [4, 5]]
 
-15. функция для обхода верхнего треугольника матрицы  **upper_triangle(matrix: list[list]) -> int or floaf**
+15. функция для обхода верхнего треугольника матрицы  **upper_triangle(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[1, 2], [0, 5]]
 
-16. функция для обхода левого треугольника матрицы  **left_triangle(matrix: list[list]) -> int or floaf**
+16. функция для обхода левого треугольника матрицы  **left_triangle(matrix: list[list]) -> int or float**
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[1, 0], [4, 0]]
 
-17. функция для обхода правого треугольника матрицы  **right_triangle(matrix: list[list]) -> int or floaf**
+17. функция для обхода правого треугольника матрицы  **right_triangle(matrix: list[list]) -> int or float**
 
 - input data: list: [[1, 2],[4, 5]]
 - output data: int: [[0, 2], [0, 5]]
+
+18. функция для нахождения элементов, больших заданного значения **filter_greater(arr: list, value: int) -> list**
+- input data: list: [1, 2, 3, 4], int: 2
+- output data: list: [3, 4]
+
+19. функция для нахождения элементов, меньших заданного значения **filter_less(arr: list, value: int) -> list**
+- input data: list: [1, 2, 3, 4], int: 3
+- output data: list: [1, 2]
+
+20. функция для нахождения элементов, равных заданному значению **filter_equal(arr: list, value: list) -> list**
+- input data: list: [1, 2, 3, 4], int: 3
+- output data: list[3]
+
+- input data: list: [1, 2, 2, 3], int: 2
+- output data: list[2, 2]
+
+21. функция для нахождения элементов, равных заданному значению **filter_not_equal(arr: list, value: int) -> list**
+- input data: list: [1, 2, 3, 4], int: 3
+- output data: list: [1, 2, 4]
