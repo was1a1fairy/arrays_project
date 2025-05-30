@@ -25,7 +25,7 @@ def user_input():
     
     return elem
 
-def input_counr_1d():
+def input_count_1d():
     while True:
         count_1 = input('input count: ')
 
@@ -45,7 +45,7 @@ def input_counr_1d():
     return count_1
 
 def input_arr(count_1):
-    n = input_counr_1d()
+    n = input_count_1d()
     arr = []
 
     for i in range(n):
@@ -95,12 +95,26 @@ def input_matrix(line, col):
 
     return matrix
 
+def input_value():
+    while True:
+        value = input('input value: ')
+
+        if value.isdigit():
+            value = int(value)
+
+        else:
+            value = 'value incorrect'
+    return value
+
+
 def main():
-    count_1 = input_counr_1d()
+    count_1 = input_count_1d()
     arr = input_arr(count_1)
 
     line, col = input_count_matrix()
     matrix = input_matrix(line, col)
+
+    value = input_value()
 
     sum = summ_1d(arr)
     log_action('function call sum')
@@ -157,12 +171,32 @@ def main():
 
     lower = lower_triangle(matrix)
     log_action('function call lower matrix')
+    log_action(str(lower))
 
     upper = upper_triangle(matrix)
     log_action('function call upper matrix')
+    log_action(str(upper))
 
     left = left_triangle(matrix)
     log_action('function call left matrix')
+    log_action(str(left))
 
     right = right_triangle(matrix)
     log_action('function call right matrix')
+    log_action(str(right))
+
+    less = filter_less(arr, value)
+    log_action('function call filter_less')
+    log_action(str(less))
+
+    greater = filter_greater(arr, value)
+    log_action('function call filter_greater')
+    log_action(str(greater))
+
+    equal = filter_equal(arr, value)
+    log_action('function call filter_equal')
+    log_action(str(equal))
+
+    not_equal = filter_not_equal(arr, value)
+    log_action('function call filter_not_equal')
+    log_action(str(not_equal))
